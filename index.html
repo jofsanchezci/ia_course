@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Cronograma, talleres y recursos del curso Introducción a la Inteligencia Artificial.">
+  <title>Introducción a la Inteligencia Artificial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio"><span class="brand-icon">IA</span><span><strong>IA · 2026</strong><small>Portal del curso</small></span></a>
+    <button id="menuButton" class="menu-button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="mainNav"><a href="#cronograma">Cronograma</a><a href="#talleres">Talleres</a><a href="#recursos">Recursos</a></nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">CC-IA001 · 4 créditos</p>
+        <h1>Introducción a la<br><span>Inteligencia Artificial</span></h1>
+        <p class="lead">Aprendizaje práctico mediante talleres de búsqueda, optimización y aprendizaje computacional.</p>
+        <div class="facts"><span>▣ 27 ago. — 9 oct. 2026</span><span>◷ 20 sesiones · 64 horas</span><span>◇ Joaquín F. Sánchez</span></div>
+      </div>
+      <aside class="progress-card">
+        <div class="progress-head"><span>Avance del curso</span><strong id="progressNumber">0%</strong></div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+        <div class="metrics"><div><b id="doneCount">0</b><span>realizadas</span></div><div><b id="pendingCount">20</b><span>pendientes</span></div><div><b>7</b><span>talleres</span></div></div>
+      </aside>
+    </section>
+
+    <div class="container">
+      <section class="cuts" aria-label="Cortes académicos">
+        <article><div><b>Primer corte</b><strong>30%</strong></div><h2>Búsqueda y resolución</h2><p>Talleres 1, 2 y 3</p></article>
+        <article><div><b>Segundo corte</b><strong>30%</strong></div><h2>Optimización bioinspirada</h2><p>Talleres 4 y 5</p></article>
+        <article><div><b>Tercer corte</b><strong>40%</strong></div><h2>Aprendizaje computacional</h2><p>Talleres 6 y 7</p></article>
+      </section>
+
+      <section id="cronograma" class="section">
+        <p class="section-kicker">Ruta de aprendizaje</p><h2 class="section-title">Cronograma del curso</h2>
+        <p class="section-copy">Consulte cada sesión, su actividad y los materiales disponibles.</p>
+        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar tema, actividad o fecha…"></label>
+        <div id="sessionList" class="session-list"></div>
+      </section>
+
+      <section id="talleres" class="section">
+        <p class="section-kicker">Evaluación</p><h2 class="section-title">Talleres del curso</h2>
+        <p class="section-copy">Las calificaciones se obtienen mediante siete talleres distribuidos en tres cortes.</p>
+        <div id="workshopGrid" class="workshop-grid"></div>
+      </section>
+
+      <section id="recursos" class="section">
+        <p class="section-kicker">Biblioteca</p><h2 class="section-title">Recursos descargables</h2>
+        <p class="section-copy">Presentaciones, guías y documentos generales de la asignatura.</p>
+        <div id="resourceGrid" class="resource-grid"></div>
+      </section>
+    </div>
+  </main>
+  <footer><span>Introducción a la Inteligencia Artificial · 2026</span><span>Joaquín F. Sánchez</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
