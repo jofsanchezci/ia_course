@@ -24,15 +24,59 @@ const sessions=[
 const workshops=[
 ["Formulación de problemas",8,"Primer corte","29 ago.",""],["Búsqueda no informada",10,"Primer corte","5 sep.",""],["Búsqueda informada y adversaria",12,"Primer corte","12 sep.",""],["Algoritmos genéticos",15,"Segundo corte","19 sep.",""],["Inteligencia de enjambres",15,"Segundo corte","26 sep.",""],["Clasificación y redes neuronales",20,"Tercer corte","3 oct.",""],["Aprendizaje por refuerzo",20,"Tercer corte","8 oct.",""]
 ];
-const resources=[
-["Programa de la asignatura","Objetivos, competencias y metodología",""],["Presentaciones","Presentación de la sesión 1: introducción a la IA",
- "./materiales/01_MIA.pdf",""],["Guías de talleres",{
+const resources = [
+  [
+    "Programa de la asignatura",
+    "Objetivos, competencias y metodología",
+    [
+      {
+        nombre: "Descargar programa",
+        url: "./materiales/Programa_IA.pdf"
+      }
+    ]
+  ],
+  [
+    "Presentaciones",
+    "Material utilizado en las sesiones",
+    [
+      {
+        nombre: "Sesión 1: Introducción a la IA",
+        url: "./materiales/01_MIA.pdf"
+      }
+    ]
+  ],
+  [
+    "Guías de laboratorio",
+    "Actividades prácticas del curso",
+    [
+      {
         nombre: "Laboratorio 1: Agentes inteligentes",
-        url: "./materiales/Taller_1_MIA.pdf"
-      }],["Código de laboratorios","Ejemplos y archivos de apoyo",""],  [
+        url: "./materiales/Guia_Laboratorio_01_Agentes.pdf"
+      },
+      {
+        nombre: "Laboratorio 2: Búsqueda no informada",
+        url: "./materiales/Guia_Laboratorio_02_Busqueda.pdf"
+      },
+      {
+        nombre: "Laboratorio 3: Búsqueda A*",
+        url: "./materiales/Guia_Laboratorio_03_AEstrella.pdf"
+      }
+    ]
+  ],
+  [
+    "Código de laboratorios",
+    "Ejemplos y archivos de apoyo",
+    []
+  ],
+  [
     "Conexiones remotas",
-    "Ingresar al encuentro sincrónico en Microsoft Teams",
-    "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjhkMDE1ZjgtZmM3YS00M2UyLWIzODEtMDJhZmY3ZWZhMDhj%40thread.v2/0?context=%7b%22Tid%22%3a%2203e1b226-5789-4a97-90f6-44a44241ba6d%22%2c%22Oid%22%3a%22ec121ed1-82a0-46f2-b98d-16774b9e2c82%22%7d"
+    "Acceso al encuentro sincrónico en Microsoft Teams",
+    [
+      {
+        nombre: "Ingresar a Microsoft Teams",
+        url: "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjhkMDE1ZjgtZmM3YS00M2UyLWIzODEtMDJhZmY3ZWZhMDhj%40thread.v2/0?context=%7b%22Tid%22%3a%2203e1b226-5789-4a97-90f6-44a44241ba6d%22%2c%22Oid%22%3a%22ec121ed1-82a0-46f2-b98d-16774b9e2c82%22%7d"
+      }
+    ]
   ]
 ];
 const labels={completed:"Finalizada",current:"En curso",upcoming:"Próxima"};
