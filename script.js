@@ -26,7 +26,11 @@ const workshops=[
 ];
 const resources=[
 ["Programa de la asignatura","Objetivos, competencias y metodología",""],["Presentaciones","Presentación de la sesión 1: introducción a la IA",
- "./materiales/01_MIA.pdf",""],["Guías de talleres","Actividades evaluables del curso",""],["Código de laboratorios","Ejemplos y archivos de apoyo",""]
+ "./materiales/01_MIA.pdf",""],["Guías de talleres","Actividades evaluables del curso",""],["Código de laboratorios","Ejemplos y archivos de apoyo",""],  [
+    "Conexiones remotas",
+    "Ingresar al encuentro sincrónico en Microsoft Teams",
+    "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjhkMDE1ZjgtZmM3YS00M2UyLWIzODEtMDJhZmY3ZWZhMDhj%40thread.v2/0?context=%7b%22Tid%22%3a%2203e1b226-5789-4a97-90f6-44a44241ba6d%22%2c%22Oid%22%3a%22ec121ed1-82a0-46f2-b98d-16774b9e2c82%22%7d"
+  ]
 ];
 const labels={completed:"Finalizada",current:"En curso",upcoming:"Próxima"};
 function renderSessions(items=sessions){document.querySelector("#sessionList").innerHTML=items.map((s,i)=>{const original=sessions.indexOf(s)+1;return `<article class="session"><span class="session-number">${String(original).padStart(2,"0")}</span><div class="session-date"><b>${s[0]}</b><small>${s[1]}</small></div><div class="session-info"><h3>${s[2]}</h3><p>${s[3]}</p></div><div class="session-actions"><span class="badge ${s[4]}">${labels[s[4]]}</span>${s[5]?`<a class="download" href="${s[5]}" download>Descargar</a>`:""}</div></article>`}).join("")}
