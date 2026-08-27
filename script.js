@@ -36,3 +36,12 @@ document.querySelector("#searchInput").addEventListener("input",e=>{const q=e.ta
 document.querySelector("#menuButton").addEventListener("click",e=>{const nav=document.querySelector("#mainNav");nav.classList.toggle("open");e.currentTarget.setAttribute("aria-expanded",nav.classList.contains("open"))});
 document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("#mainNav").classList.remove("open")));
 renderSessions();renderWorkshops();renderResources();updateProgress();
+
+[
+  "27 ago.",
+  "6:00–9:00 p. m.",
+  "Introducción a la IA",
+  "Historia, aplicaciones y tipos de problemas.",
+  "completed",
+  "materiales/01_MIA.pdf"
+]
