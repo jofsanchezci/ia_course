@@ -25,7 +25,8 @@ const workshops=[
 ["Formulación de problemas",8,"Primer corte","29 ago.",""],["Búsqueda no informada",10,"Primer corte","5 sep.",""],["Búsqueda informada y adversaria",12,"Primer corte","12 sep.",""],["Algoritmos genéticos",15,"Segundo corte","19 sep.",""],["Inteligencia de enjambres",15,"Segundo corte","26 sep.",""],["Clasificación y redes neuronales",20,"Tercer corte","3 oct.",""],["Aprendizaje por refuerzo",20,"Tercer corte","8 oct.",""]
 ];
 const resources=[
-["Programa de la asignatura","Objetivos, competencias y metodología",""],["Presentaciones","Material de las sesiones",""],["Guías de talleres","Actividades evaluables del curso",""],["Código de laboratorios","Ejemplos y archivos de apoyo",""]
+["Programa de la asignatura","Objetivos, competencias y metodología",""],["Presentaciones","Presentación de la sesión 1: introducción a la IA",
+ "./materiales/01_MIA.pdf",""],["Guías de talleres","Actividades evaluables del curso",""],["Código de laboratorios","Ejemplos y archivos de apoyo",""]
 ];
 const labels={completed:"Finalizada",current:"En curso",upcoming:"Próxima"};
 function renderSessions(items=sessions){document.querySelector("#sessionList").innerHTML=items.map((s,i)=>{const original=sessions.indexOf(s)+1;return `<article class="session"><span class="session-number">${String(original).padStart(2,"0")}</span><div class="session-date"><b>${s[0]}</b><small>${s[1]}</small></div><div class="session-info"><h3>${s[2]}</h3><p>${s[3]}</p></div><div class="session-actions"><span class="badge ${s[4]}">${labels[s[4]]}</span>${s[5]?`<a class="download" href="${s[5]}" download>Descargar</a>`:""}</div></article>`}).join("")}
