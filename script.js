@@ -37,11 +37,3 @@ document.querySelector("#menuButton").addEventListener("click",e=>{const nav=doc
 document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("#mainNav").classList.remove("open")));
 renderSessions();renderWorkshops();renderResources();updateProgress();
 
-[
-  "27 ago.",
-  "6:00–9:00 p. m.",
-  "Introducción a la IA",
-  "Historia, aplicaciones y tipos de problemas.",
-  "completed",
-  "materiales/01_MIA.pdf"
-]
