@@ -51,7 +51,7 @@ const resources = [
     [
       {
         nombre: "Laboratorio 1: Agentes inteligentes",
-        url: "./materiales/Guia_Laboratorio_01_Agentes.pdf"
+        url: "./materiales/Taller_1_MIA.pdf"
       },
       {
         nombre: "Laboratorio 2: Búsqueda no informada",
