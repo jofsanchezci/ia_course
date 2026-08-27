@@ -26,7 +26,10 @@ const workshops=[
 ];
 const resources=[
 ["Programa de la asignatura","Objetivos, competencias y metodología",""],["Presentaciones","Presentación de la sesión 1: introducción a la IA",
- "./materiales/01_MIA.pdf",""],["Guías de talleres","Actividades evaluables del curso",""],["Código de laboratorios","Ejemplos y archivos de apoyo",""],  [
+ "./materiales/01_MIA.pdf",""],["Guías de talleres",{
+        nombre: "Laboratorio 1: Agentes inteligentes",
+        url: "./materiales/Taller_1_MIA.pdf"
+      }],["Código de laboratorios","Ejemplos y archivos de apoyo",""],  [
     "Conexiones remotas",
     "Ingresar al encuentro sincrónico en Microsoft Teams",
     "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjhkMDE1ZjgtZmM3YS00M2UyLWIzODEtMDJhZmY3ZWZhMDhj%40thread.v2/0?context=%7b%22Tid%22%3a%2203e1b226-5789-4a97-90f6-44a44241ba6d%22%2c%22Oid%22%3a%22ec121ed1-82a0-46f2-b98d-16774b9e2c82%22%7d"
@@ -35,7 +38,52 @@ const resources=[
 const labels={completed:"Finalizada",current:"En curso",upcoming:"Próxima"};
 function renderSessions(items=sessions){document.querySelector("#sessionList").innerHTML=items.map((s,i)=>{const original=sessions.indexOf(s)+1;return `<article class="session"><span class="session-number">${String(original).padStart(2,"0")}</span><div class="session-date"><b>${s[0]}</b><small>${s[1]}</small></div><div class="session-info"><h3>${s[2]}</h3><p>${s[3]}</p></div><div class="session-actions"><span class="badge ${s[4]}">${labels[s[4]]}</span>${s[5]?`<a class="download" href="${s[5]}" download>Descargar</a>`:""}</div></article>`}).join("")}
 function renderWorkshops(){document.querySelector("#workshopGrid").innerHTML=workshops.map((w,i)=>`<article class="workshop"><div class="workshop-head"><span class="workshop-number">T${i+1}</span><span class="weight">${w[1]}%</span></div><h3>${w[0]}</h3><p>Actividad práctica de aplicación y análisis de resultados.</p><div class="workshop-meta"><span>${w[2]}</span><span>${w[3]}</span></div>${w[4]?`<a class="download" href="${w[4]}" download>Descargar guía</a>`:`<div class="unavailable">Guía próximamente</div>`}</article>`).join("")}
-function renderResources(){document.querySelector("#resourceGrid").innerHTML=resources.map((r,i)=>`<article class="resource"><span class="resource-icon">${i+1}</span><div><h3>${r[0]}</h3><p>${r[1]}</p></div>${r[2]?`<a class="download" href="${r[2]}" download>Descargar</a>`:`<span class="badge">Próximamente</span>`}</article>`).join("")}
+function renderResources() {
+  const resourceGrid = document.querySelector("#resourceGrid");
+
+  resourceGrid.innerHTML = resources.map((recurso, indice) => {
+    const archivos = recurso[2];
+
+    let contenidoBotones = `
+      <span class="badge">Próximamente</span>
+    `;
+
+    if (archivos.length > 0) {
+      contenidoBotones = `
+        <div class="resource-links">
+          ${archivos.map((archivo) => {
+            const esExterno = archivo.url.startsWith("http");
+
+            return `
+              <a
+                class="download"
+                href="${archivo.url}"
+                ${esExterno
+                  ? 'target="_blank" rel="noopener noreferrer"'
+                  : 'download'
+                }
+              >
+                ${archivo.nombre}
+              </a>
+            `;
+          }).join("")}
+        </div>
+      `;
+    }
+
+    return `
+      <article class="resource">
+        <span class="resource-icon">${indice + 1}</span>
+
+        <div class="resource-content">
+          <h3>${recurso[0]}</h3>
+          <p>${recurso[1]}</p>
+          ${contenidoBotones}
+        </div>
+      </article>
+    `;
+  }).join("");
+}
 function updateProgress(){const done=sessions.filter(s=>s[4]==="completed").length;const value=Math.round(done/sessions.length*100);document.querySelector("#progressNumber").textContent=value+"%";document.querySelector("#progressBar").style.width=value+"%";document.querySelector("#doneCount").textContent=done;document.querySelector("#pendingCount").textContent=sessions.length-done}
 document.querySelector("#searchInput").addEventListener("input",e=>{const q=e.target.value.toLowerCase();renderSessions(sessions.filter(s=>s.slice(0,4).join(" ").toLowerCase().includes(q)))});
 document.querySelector("#menuButton").addEventListener("click",e=>{const nav=document.querySelector("#mainNav");nav.classList.toggle("open");e.currentTarget.setAttribute("aria-expanded",nav.classList.contains("open"))});
