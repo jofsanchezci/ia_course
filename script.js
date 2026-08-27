@@ -2,7 +2,7 @@
 const sessions=[
 ["27 ago.","6:00–9:00 p. m.","Introducción a la IA","Historia, aplicaciones y tipos de problemas.","current","./materiales/01_MIA.pdf"],
 ["28 ago.","6:00–9:00 p. m.","Agentes inteligentes","Racionalidad, entorno, percepción y acciones.","upcoming","./materiales/02_MIA.pdf"],
-["29 ago.","7:00–11:00 a. m.","Formulación de problemas","Estados, acciones, objetivos y Taller 1.","upcoming",""],
+["29 ago.","7:00–11:00 a. m.","Formulación de problemas","Estados, acciones, objetivos y Taller 1.","upcoming","./materiales/03_MIA.pdf"],
 ["3 sep.","6:00–9:00 p. m.","Búsqueda no informada I","Fundamentos y búsqueda en anchura (BFS).","upcoming",""],
 ["4 sep.","6:00–9:00 p. m.","Búsqueda no informada II","DFS, búsqueda iterativa y costo uniforme.","upcoming",""],
 ["5 sep.","7:00–11:00 a. m.","Laboratorio de búsqueda","Implementación y Taller 2.","upcoming",""],
