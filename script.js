@@ -5,7 +5,7 @@ const sessions=[
 ["29 ago.","7:00–11:00 a. m.","Formulación de problemas","Estados, acciones, objetivos y Taller 1.","completed","./materiales/03_MIA.pdf"],
 ["3 sep.","6:00–9:00 p. m.","Búsqueda no informada I","Fundamentos y búsqueda en anchura (BFS).","completed","./materiales/04_MIA.pdf"],
 ["4 sep.","6:00–9:00 p. m.","Búsqueda no informada II","DFS, búsqueda iterativa y costo uniforme.","completed","./materiales/05_MIA.pdf"],
-["5 sep.","7:00–11:00 a. m.","Laboratorio de búsqueda","Implementación y Taller 2.","completed",""],
+["5 sep.","7:00–11:00 a. m.","Laboratorio de búsqueda","Implementación y Taller 2.","completed","","./materiales/Taller_2_MIA.pdf"],
 ["10 sep.","6:00–9:00 p. m.","Búsqueda informada","Heurísticas, búsqueda voraz y A*.","upcoming",""],
 ["11 sep.","6:00–9:00 p. m.","Búsqueda adversaria","Minimax y poda alfa-beta.","upcoming",""],
 ["12 sep.","7:00–11:00 a. m.","Laboratorio del primer corte","Búsqueda informada y Taller 3.","upcoming",""],
