@@ -55,7 +55,7 @@ const resources = [
       },
       {
         nombre: "Laboratorio 2: Búsqueda no informada",
-        url: "./materiales/Guia_Laboratorio_02_Busqueda.pdf"
+        url: "./materiales/Taller_2_MIA.pdf"
       },
       {
         nombre: "Laboratorio 3: Búsqueda A*",
