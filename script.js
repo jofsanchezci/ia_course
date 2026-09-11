@@ -9,7 +9,7 @@ const sessions=[
 ["10 sep.","6:00–9:00 p. m.","Búsqueda informada","Heurísticas, búsqueda voraz y A*.","completed","./materiales/06_MIA.pdf"],
 ["11 sep.","6:00–9:00 p. m.","Búsqueda adversaria","Minimax y poda alfa-beta.","upcoming","./materiales/07_MIA.pdf"],
 ["12 sep.","7:00–11:00 a. m.","Laboratorio del primer corte","Búsqueda informada y Taller 3.","upcoming","./materiales/Taller_3_MIA.pdf"],
-["17 sep.","6:00–9:00 p. m.","Algoritmos evolutivos","Población, cromosoma y aptitud.","upcoming",""],
+["17 sep.","6:00–9:00 p. m.","Algoritmos evolutivos","Población, cromosoma y aptitud.","upcoming","./materiales/08_MIA.pdf"],
 ["18 sep.","6:00–9:00 p. m.","Operadores genéticos","Selección, cruce y mutación.","upcoming",""],
 ["19 sep.","7:00–11:00 a. m.","Laboratorio genético","Implementación y Taller 4.","upcoming",""],
 ["24 sep.","6:00–9:00 p. m.","Colonia de hormigas","Inteligencia de enjambres y ACO.","upcoming",""],
