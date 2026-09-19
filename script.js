@@ -63,7 +63,7 @@ const resources = [
         url: "./materiales/Taller_3_MIA.pdf"
       },
       {
-        nombre: "Laboratorio 4:Comparación Algo*",
+        nombre: "Laboratorio 4:Comparación Algoritmos",
         url: "./materiales/Taller_4_MIA.pdf"
       }
     ]
