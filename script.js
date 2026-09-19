@@ -60,7 +60,11 @@ const resources = [
       },
       {
         nombre: "Laboratorio 3: Búsqueda A*",
-        url: "./materiales/Guia_Laboratorio_03_AEstrella.pdf"
+        url: "./materiales/Taller_3_MIA.pdf"
+      },
+      {
+        nombre: "Laboratorio 4:Comparación Algo*",
+        url: "./materiales/Taller_4_MIA.pdf"
       }
     ]
   ],
