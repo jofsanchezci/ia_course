@@ -13,7 +13,7 @@ const sessions=[
 ["17 sep.","6:00–9:00 p. m.","Algoritmos evolutivos","Ascenso de Colinas y Temple Simulado","completed","./materiales/08_B_MIA.pdf"],
 ["18 sep.","6:00–9:00 p. m.","Colonia de hormigas","Inteligencia de enjambres y ACO.","completed","./materiales/09_MIA.pdf"],
 ["19 sep.","7:00–11:00 a. m.","Enjambre de partículas","Fundamentos de PSO | Taller 4.","completed","./materiales/10_MIA.pdf"],
-["24 sep.","6:00–9:00 p. m.","Machine learning","Tipos de aprendizaje y flujo de trabajo.","upcoming","./materiales/11_A_MIA.pdf"],
+["24 sep.","6:00–9:00 p. m.","Machine learning","Tipos de aprendizaje y flujo de trabajo.","completed","./materiales/11_A_MIA.pdf"],
 ["25 sep.","6:00–9:00 p. m.","Machine learning","Tipos de aprendizaje y flujo de trabajo.","upcoming","./materiales/11_MIA.pdf"],
 ["26 sep.","7:00–11:00 a. m.","Laboratorio de optimización","Practica de ML Regresión Lineal","upcoming",""],
 ["1 oct.","6:00–9:00 p. m.","Machine learning","Tipos de aprendizaje y flujo de trabajo.","upcoming",""],
