@@ -16,7 +16,7 @@ const sessions=[
 ["24 sep.","6:00–9:00 p. m.","Machine learning","Tipos de aprendizaje y flujo de trabajo.","completed","./materiales/11_A_MIA.pdf"],
 ["25 sep.","6:00–9:00 p. m.","Machine learning","Introducción a regresión lineal.","completed","./materiales/11_MIA.pdf"],
 ["26 sep.","7:00–11:00 a. m.","Laboratorio de ML","Practica de ML Regresión Lineal","completed","./materiales/Taller_5_MIA.pdf"],
-["1 oct.","6:00–9:00 p. m.","Introdicción a Redes Neuronales","upcoming","./materiales/12_MIA.pdf"],
+["1 oct.","6:00–9:00 p. m.","Introdicción a Redes Neuronales","completed","./materiales/12_MIA.pdf"],
 ["2 oct.","6:00–9:00 p. m.","Clasificación","Árboles, sobreajuste y métricas.","upcoming",""],
 ["3 oct.","7:00–11:00 a. m.","Redes neuronales","Perceptrón, propagación y Taller 6.","upcoming",""],
 ["8 oct.","6:00–9:00 p. m.","Aprendizaje por refuerzo","Agentes, recompensas y Q-learning. Taller 7.","upcoming",""],
