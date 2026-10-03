@@ -17,7 +17,7 @@ const sessions=[
 ["25 sep.","6:00–9:00 p. m.","Machine learning","Introducción a regresión lineal.","completed","./materiales/11_MIA.pdf"],
 ["26 sep.","7:00–11:00 a. m.","Laboratorio de ML","Practica de ML Regresión Lineal","completed","./materiales/Taller_5_MIA.pdf"],
 ["1 oct.","6:00–9:00 p. m.","Introducción a Redes Neuronales","Conceptos","completed","./materiales/12_MIA.pdf"],
-["2 oct.","6:00–9:00 p. m.","Redes Neuronales", "Aplicaciones","upcoming","./materiales/13_MIA.pdf"],
+["2 oct.","6:00–9:00 p. m.","Redes Neuronales", "Aplicaciones","completed","./materiales/13_MIA.pdf"],
 ["3 oct.","7:00–11:00 a. m.","Introducción a IA Generativa","Conceptos","upcoming",""],
 ["8 oct.","6:00–9:00 p. m.","Aprendizaje por refuerzo","Agentes, recompensas y Q-learning. Taller 7.","upcoming",""],
 ["9 oct.","6:00–7:00 p. m.","Cierre del curso","Síntesis, retroalimentación y notas.","upcoming",""]
