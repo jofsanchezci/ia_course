@@ -42,7 +42,7 @@ const resources = [
   [
     {
       nombre: "Cargar archivo de entrega",
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSfscAvnu1Q4UwFWGfQXjWp8B93BjUu27jSg2A2-iCgvwCKRFg/viewform?usp=sharing&ouid=104223724826283150459"
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSfscAvnu1Q4UwFWGfQXjWp8B93BjUu27jSg2A2-iCgvwCKRFg/viewform?usp=sharing&ouid=104223724826283150459",
       tipo: "entrega"
     }
   ]
@@ -119,7 +119,7 @@ function renderResources() {
 
             return `
               <a
-                class="download"
+                class="download ${archivo.tipo === "entrega" ? "submission-button" : ""}"
                 href="${archivo.url}"
                 ${esExterno
                   ? 'target="_blank" rel="noopener noreferrer"'
@@ -146,15 +146,6 @@ function renderResources() {
       </article>
     `;
   }).join("");
-
-  <a
-  class="download ${archivo.tipo === "entrega" ? "submission-button" : ""}"
-  href="${archivo.url}"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  ${archivo.nombre}
-</a>
 }
 function updateProgress(){const done=sessions.filter(s=>s[4]==="completed").length;const value=Math.round(done/sessions.length*100);document.querySelector("#progressNumber").textContent=value+"%";document.querySelector("#progressBar").style.width=value+"%";document.querySelector("#doneCount").textContent=done;document.querySelector("#pendingCount").textContent=sessions.length-done}
 document.querySelector("#searchInput").addEventListener("input",e=>{const q=e.target.value.toLowerCase();renderSessions(sessions.filter(s=>s.slice(0,4).join(" ").toLowerCase().includes(q)))});
