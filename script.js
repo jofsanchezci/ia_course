@@ -19,7 +19,7 @@ const sessions=[
 ["1 oct.","6:00–9:00 p. m.","Introducción a Redes Neuronales","Conceptos","completed","./materiales/12_MIA.pdf"],
 ["2 oct.","6:00–9:00 p. m.","Redes Neuronales", "Aplicaciones","completed","./materiales/13_MIA.pdf"],
 ["3 oct.","7:00–11:00 a. m.","Introducción a IA Generativa","Conceptos","completed",""],
-["8 oct.","6:00–9:00 p. m.","Aprendizaje por refuerzo","Agentes, recompensas y Q-learning.","upcoming","./materiales/14_MIA.pdf"],
+["8 oct.","6:00–9:00 p. m.","Agentes y MCP","Agentes, recompensas y Q-learning.","upcoming","./materiales/14_MIA.pdf"],
 ["9 oct.","6:00–7:00 p. m.","Cierre del curso","Síntesis, retroalimentación y notas.","completed",""]
 ];
 const workshops=[
